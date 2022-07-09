@@ -2,11 +2,9 @@
 function App() {
 
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </div>
+    <>
+      <canvas className="rounded-md bg-slate-50 w-[500px] h-[500px]"/>
+    </>
   )
 
 }
