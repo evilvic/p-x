@@ -13,33 +13,13 @@ const App = () => {
       },
       {
         "kind": "block",
-        "type": "controls_repeat_ext"
-      },
-      {
-        "kind": "block",
-        "type": "logic_compare"
-      },
-      {
-        "kind": "block",
-        "type": "math_number"
-      },
-      {
-        "kind": "block",
-        "type": "math_arithmetic"
-      },
-      {
-        "kind": "block",
-        "type": "text"
-      },
-      {
-        "kind": "block",
-        "type": "text_print"
-      },
+        "type": "controls_whileUntil"
+      }
     ]
   }
 
   useEffect(() => {
-    const workspace  = Blockly.inject('blocklyDiv', { toolbox });
+    const workspace = Blockly.inject('blocklyDiv', { toolbox: toolbox })
   }, [])
 
   return (
